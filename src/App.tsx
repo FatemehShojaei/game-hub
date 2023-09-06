@@ -3,6 +3,7 @@ import { useState } from "react";
 import GameGrid from "./components/GameGrid";
 
 import NavBar from "../src/components/Navbar";
+import GenreList from "./components/GenreList";
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
         <NavBar />
       </GridItem>
       <Show above="lg">
-        <GridItem area="aside" paddingX={5}></GridItem>
+        <GridItem area="aside">
+          <GenreList />
+        </GridItem>
       </Show>
       <GridItem area="main">
         <GameGrid />
